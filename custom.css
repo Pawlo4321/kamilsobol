@@ -5,3 +5,12 @@
 #testImage2{
     transform: rotate(-10deg);
 }
+
+.animate-on-load {
+    transition: 2s;
+    opacity: 0; /* Initially hidden */
+  }
+
+#aboutMe{
+    opacity: 0;
+} 
