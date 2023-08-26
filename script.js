@@ -8,10 +8,9 @@ const AboutMe = document.getElementById("aboutMe");
 
 window.onscroll = () => {
   let top = window.scrollY;
-  let offset = AboutMe.offsetTop;
+  let offset = AboutMe.offsetTop - 400;
   let height = AboutMe.offsetHeight;
-
   if (top >= offset && top < offset + height) {
-    console.log("test");
+    AboutMe.classList.add("show-animate");
   }
 };

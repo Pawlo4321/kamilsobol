@@ -12,5 +12,10 @@
   }
 
 #aboutMe{
-    opacity: 0;
+    transition: all 3s;
+    transform: translateX(-100%);
 } 
+
+#aboutMe.show-animate {
+    transform: translateX(0%);
+}
