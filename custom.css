@@ -9,20 +9,44 @@
 .animate-on-load {
     transition: 2s;
     opacity: 0; /* Initially hidden */
+    filter: blur(5px);
   }
 
 #aboutMe{
-    transition: all 2.5s;
+    transition: all 2s;
+    filter: blur(5px);
+    opacity: 0;
     transform: translateX(-100%);
+
+
 } 
 
 #aboutMe.show-animate {
-    transform: translateX(0%);
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
+#zyjzpasja{
+    transition: all 2s;
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#zyjzpasja.show-animate {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+
+/* image */
 img{
     transition: 0.5s;
 }
 img:hover{
     opacity: 0.7;
 }
+
